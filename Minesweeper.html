@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="Minesweeper.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      rel="stylesheet">
+  <link rel="stylesheet" href="Minesweeper.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Liam's Minesweeper</h1>
+
+  <div class>
+    <div class ='center status'>
+      <img src="curiousface.png" alt="curious face" height="42" width="42">
+    </div>
+  </div>
+
+  <div class='container-fluid'>
+    <div class='row game'>
+      <div class='col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4' id="gameGrid">
+
+      </div>
+    </div>
+    <div class = 'row'>
+      <div class = 'col-xs-12' id="presets">
+        <div class = 'center'>
+          <button type=button class="btn btn-success" id="easy"> Easy</button>
+          <button type=button class="btn btn-primary" id="medium"> Medium</button>
+          <button type=button class="btn btn-warning" id="hard"> Hard</button>
+          <button type=button class="btn btn-danger" id="expert"> Expert</button>
+        </div>
+      </div>
+    </div>
+    <div class='row bottom'>
+      <div class='col-xs-12'  id="controls">
+        <div class = 'center'>
+            <h3>Custom Game</h3>
+        </div>
+        <div class ='center'>
+          <input id="gridSize" type="text" name="row" placeholder="Grid Size"></input>
+          <input id="bombs" type="text" name"bombs" placeholder="# of Bombs"></input>
+          <button type=button id="createGame">Create Game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
